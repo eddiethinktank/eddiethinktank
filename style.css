@@ -1,67 +1,162 @@
 
 /* 
-	STYLE.CSS:
+        STYLE.CSS:
 	One stylesheet to rule them all.
 	
 	selector { property:value }
 	
 */
 
-@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great|Lato);
-/* Set ALL HTML elements with border-box sizing */* 
-{
-  box-sizing: border-box;
-}
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700|Noto+Sans:400,700|Noto+Serif);
+
+/* -------  Structure ------- */
+
 body {
-  background-color: #5f5345;
+	background-image: (images/subtle_white_mini_waves.jpg);
+  margin: 0;
 }
- 
-.pageContainer {
-  width: 940px;
-  margin: 20px auto 0 auto;
-  padding: 20px;
-  background-color: #fff;
+
+header{
+	height: 140px;
+	background-color: #403933;
+	background-image: (images/subtle_brown_mini_waves.jpg);
 }
- 
-.imageContainer {
-  float: left;
-  width: 620px;
+
+footer {
+	height: 84px;
+	background-color: #403933;
+	background-image: (images/subtle_brown_mini_waves.jpg);
 }
- 
-.textContainer {
-  float: left;
-  width: 300px;
-  margin-left: 20px;
-  margin-top: 20px;
+
+.wrapper {
+	width: 580px;
+	margin: auto;	
 }
 
 img {
-  width: 100%;
+        width: 100%;	
 }
- 
-h1 {
-  font-family: 'Fredericka the Great', cursive;
-  font-size: 64px;
-  color: #8b1b00;
+
+/* -------  Logo ------- */
+
+header h1 {
+	font-family: 'Playfair Display', serif;
+	color: #f0eee9;
+	margin: 0px;
+	padding-top: 24px;
+	font-size: 48px;
+	text-align:center;
 }
- 
+
+header h2 {
+	font-family: 'Playfair Display', serif;
+	color: #e3e1dc;
+	margin: 0px;
+	padding-top: 16px;
+	font-size: 22px;
+	text-align: center;
+}
+
+/* ------- Font Type ------- */
+
+h1, h2 {
+	color: #403933;
+	font-family: 'Noto Serif', serif;
+}
+
+h1{
+	font-size: 38px;
+}
+
+h2{
+	font-size: 30px;
+}
+
 p, li {
-  font-family: 'Lato', sans-serif;
-  font-size: 22px;
-  color: #51473b;
+	font-family: 'Noto Sans', sans-serif;
+	color: #2d2c2a;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 26px;
+}
+
+a {
+	font-weight: 700;
+	text-decoration: none;	
+}
+
+a:link { 
+	color: #38786a;
+}
+
+a:visited { 
+	color: #38786a;
+}
+
+a:hover { 
+	color: #403933;
+}
+
+a:active {
+	color: #403933;
+}
+
+a:hover {
+	text-decoration: underline;	
+}
+
+footer p {
+	color: #fff;	
+	text-align: center;
+}
+
+footer a:link { 
+	color: #698378; 
+}
+
+footer a:visited { 
+	color: #698378;
+}
+
+footer a:hover { 
+	color: #a4cdbc;
+}
+footer a:active { 
+	color: #a4cdbc;
+}
+
+/* -------  Elements ------- */
+
+img, iframe {
+	border-radius: 8px;
+} 
+
+iframe {
+	border: 1px solid #403933;
+}
+
+hr {
+	border: .5px solid #403933;
 }
 
 
+/* -------  Spacers ------- */  
+/* An easy technique for creating spacers for now */
 
-
-/* ---- Advanced ---- */
-/* This tag is a bit advanced for this lesson,  
-   but is needed to wrap the pageContainer 
-   around any sized content that is floated within it. */
-
-.pageContainer:after { 
-  content: " ";
-  display: table;
-  clear: both;
+.gap-sm {
+    height: 50px;
+    width: auto;
 }
- 
+.gap-md {
+    height: 100px;
+    width: auto;
+}
+.gap-lg {
+    height: 200px;
+    width: auto;
+}
+
+.gap-footer {
+    height: 10px;
+    width: auto;
+}
