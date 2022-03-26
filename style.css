@@ -62,6 +62,7 @@ header h2 {
 h1, h2 {
 	color: #403933;
 	font-family: 'Noto Serif', serif;
+	text-align: center;
 }
 
 h1{
